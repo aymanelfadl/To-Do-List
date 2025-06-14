@@ -44,6 +44,7 @@ const tasksSlice = createSlice({
     addTask: (state, action: PayloadAction<Task>) => {
       state.value.push(action.payload);
     },
+    // TODO: delete action
   },
 });
 

@@ -13,8 +13,8 @@ const Home = () => {
   const dispatch = useDispatch<AppDispatch>();
 
   const onAddingTask = () => {
-    const titleValue = title.current?.value;
-    const descValue = des.current?.value;
+    const titleValue: string | undefined = title.current?.value;
+    const descValue: string | undefined = des.current?.value;
 
     if (!titleValue || !descValue) {
       alert("Please fill in both fields.");
@@ -35,6 +35,7 @@ const Home = () => {
   };
 
   const onDeleteTask = () => {
+    // TODO: romeve thinigi
     console.log("delete logic here");
   };
 
